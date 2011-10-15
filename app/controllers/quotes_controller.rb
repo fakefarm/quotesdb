@@ -3,11 +3,6 @@ class QuotesController < ApplicationController
   # GET /quotes.xml
   def index
     @quotes = Quote.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @quotes }
-    end
   end
 
   # GET /quotes/1

@@ -1,4 +1,6 @@
-<h1>Listing quotes</h1>
+<h1>Dave Woodall's first Ruby on Rails database</h1>
+
+<h2>Listing Quotes</h2>
 
 <table>
   <tr>
@@ -15,7 +17,7 @@
     <td><%= quote.by %></td>
     <td><%= link_to 'Show', quote %></td>
     <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-    <td><%= link_to 'Destroy', quote, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', quote, :confirm => 'Do you really want to delete this great quote?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
